@@ -1,0 +1,31 @@
+[{
+    "no": 1,
+    "nama": "ASUS ProArt Studiobook",
+    "description": "I created this website about ASUS ProArt because at that time I was very confused about what to make, but finally I got inspiration from an ASUS sales book that contained a lot of information about introducing sophisticated laptops.",
+    "path": "laptop2.jpg"
+}, {
+    "no": 2,
+    "nama": "To Do List App",
+    "description": "I was quite happy after I managed to create a To Do List application, yes indeed but it is not completely perfect.",
+    "path": "todolist.jpg"
+}, {
+    "no": 3,
+    "nama": "Free Template Web",
+    "description": "I created this template website because I was really bored at that time, so I created and shared this website for free in my community.",
+    "path": "template.jpg"
+}, {
+    "no": 4,
+    "nama": "PHP CRUD",
+    "description": "I created this app for a school assignment, and since then I've been working on ways to make my program run better and I've made the UI cleaner and nicer with Tailwind CSS.",
+    "path": "crud.jpg"
+}, {
+    "no": 5,
+    "nama": "Portfolio (Prototype)",
+    "description": "This is my first portfolio that is 100% finished. Although the design is not very attractive, it makes me proud.",
+    "path": "portfolio.jpg"
+}, {
+    "no": 6,
+    "nama": "School Project",
+    "description": "I created this website because of a social science assignment, at that time I was told to create it using Canva, but I challenged myself to create it in the form of a website. On this website I explain about the geographical impact of the country of Indonesia.",
+    "path": "school.jpg"
+}]
