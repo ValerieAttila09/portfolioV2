@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valerie's Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="src/css/style.css" type="text/css" media="all" />
+
+    <!-- Tailwindcss config -->
+    <style type="text/tailwindcss">
+@theme {
+        --color-light: #F7F7F7;
+        --color-secondaryLight: #EEEEEE;
+        --color-greyLight: #929AAB;
+        --color-dark: #19191A;
+    }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body class="w-full bg-dark">
+
+    <!-- Intro -->
+    <div id="boxWrap" class="overflow-hidden w-full h-full relative bg-dark">
+        <!-- Intro Container -->
+        <div id="introImage" class="scale-[1.5] w-full h-full overflow-hidden">
+            <div id="boxName" class="p-[3rem] w-full h-full flex flex-col justify-center items-center gap-[4rem] p-4 relative">
+                <div class="w-full flex justify-center items-center">
+                    <h1 id="name1" class="scale-[0.7] cinzel-decorative-bold text-6xl text-white">VALERIE</h1>
+                </div>
+                <div class="w-full flex justify-center items-center">
+                    <h1 id="name2" class="scale-[0.7] cinzel-decorative-bold text-6xl text-white">ATTILA</h1>
+                </div>
+                <div class="w-full flex justify-center items-center">
+                    <h1 id="name3" class="scale-[0.7] cinzel-decorative-bold text-6xl text-white">AL-FATH.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Greetings -->
+    <div id="greetings" class="bg-dark w-full h-auto py-10 lg:px-[5rem]">
+        <!-- Greetings Title -->
+        <div class="w-full flex justify-start items-center p-4">
+            <h1 class="didact-gothic-bold text-7xl lg:text-8xl text-light">Who's valerie?</h1>
+        </div>
+        <!-- Greetings Container -->
+        <div class="w-full grid lg:grid-cols-5 gap-4">
+            <div class="lg:col-span-2 w-full p-5">
+                <img class="object-cover w-full h-auto rounded-lg" src="src/img/greetings.jpg" alt="" />
+            </div>
+            <div class="lg:col-span-3 w-full flex flex-col justify-start items-start gap-2 p-5">
+                <span class="text-sm lg:text-4xl orbitron-bold text-greyLight mb-2">G R E E T I N G S</span>
+                <p class="lg:w-4/5 text-2xl lg:text-3xl text-light didact-gothic-medium">
+                    My name is Valerie Attila Al-Fath, a <span class="nunito-bold">Software Engineering</span> student at SMK Multi Karya, Indonesia. I am passionate about technology and continuously developing my skills in software development and related fields.
+                </p>
+                <br />
+
+                <div class="w-full flex justify-start items-center">
+                    <div class="w-2/5 flex flex-col justify-start items-start gap-2">
+                        <button href="#" class="w-full focus:bg-dark border-2 border-transparent focus:border-light focus:text-light hover:bg-neutral-400 hover:border-transparent transition-all text-center px-5 py-2 rounded-md bg-secondaryLight instrument-sans-medium text-dark">More Info</button>
+                        <div class="w-full flex justify-start items-center gap-2">
+                            <div class="p-1">
+                                <svg fill="#C4C4C4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z" /><circle cx="11.994" cy="11.979" r="3.003" /></svg>
+                            </div>
+                            <div class="p-1">
+                                <svg fill="#C4C4C4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z" /></svg>
+                            </div>
+                            <div class="p-1">
+                                <svg fill="#C4C4C4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z" /></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-auto bg-light py-10 lg:px-[5rem]">
+        <div class="w-full flex justify-start items-center px-4 pt-5 pb-1">
+            <h1 class="text-7xl lg:text-8xl didact-gothic-bold text-dark">Skills.</h1>
+        </div>
+        <div class="w-full p-4 grid lg:grid-cols-4 gap-5">
+            <div class="lg:col-span-2 w-full flex justify-end items-center lg:p-[1rem]">
+                <p class=" text-lg lg:text-2xl didact-gothic-medium text-dark">
+                    I am an expert in creating UI (User Interface) and UX (User Experience) Designs, and I am also an expert in creating Back-End programs. I am ready to respond if you need me.
+                </p>
+            </div>
+
+            <div class="lg:col-span-2 w-full py-5 flex justify-center items-center">
+                <img class="object-cover w-full lg:w-1/2 h-auto rounded-lg" src="src/img/study.jpg" alt="" />
+            </div>
+        </div>
+
+        <br />
+
+        <div class="w-full grid lg:grid-cols-4">
+            <div class="w-full lg:col-span-2">
+                <div class="w-full flex justify-start items-center px-4 pt-4 pb-2">
+                    <h1 class="text-4xl lg:text-5xl underline underline-offset-8 didact-gothic-bold text-dark">What am i studying</h1>
+                </div>
+                <div class="w-full p-4 lg:pr-[8rem] lg:pl-4">
+                    <p class="text-lg lg:text-2xl didact-gothic-medium text-dark">
+                        I am currently learning about Back-End, which includes Javascript, MySQL, ReactJS, and PHP. In school, I studied PHP and MySQL. And I am currently learning Javascript, and ReactJS on my own.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full lg:col-span-2">
+                <div class="w-full flex justify-start items-center px-4 pt-4 pb-2">
+                    <h1 class="text-4xl lg:text-5xl underline underline-offset-8 didact-gothic-bold text-dark">Web Design</h1>
+                </div>
+                <div class="w-full p-4 lg:pr-[8rem] lg:pl-4">
+                    <p class="text-lg lg:text-2xl didact-gothic-medium text-dark mb-3">
+                        I design a website with patience, determination, and intention. I always design a website with a simple, modern, and minimalist theme.
+                    </p>
+
+                    <p class="text-lg lg:text-2xl didact-gothic-medium text-dark mb-3">
+                        Every time I create a website, the styling and animation frameworks I often use include:
+                    </p>
+                    <div class="p-2">
+                        <ul class="list-inside list-disc flex flex-col justify-start items-start gap-1">
+                            <li class="text-lg lg:text-2xl text-dark didact-gothic-medium">Tailwind CSS</li>
+                            <li class="text-lg lg:text-2xl text-dark didact-gothic-medium">GSAP</li>
+                            <li class="text-lg lg:text-2xl text-dark didact-gothic-medium">Anime.js</li>
+                            <li class="text-lg lg:text-2xl text-dark didact-gothic-medium">Alpine.js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br />
+
+
+        <br />
+
+        <div class="w-full flex justify-center items-center">
+            <div class="w-full lg:w-3/5 flex justify-center items-center p-2">
+                <div class="w-6/7 h-auto p-4 rounded-lg bg-secondaryLight flex flex-col justify-center items-center gap-2">
+                    <span class="text-center text-lg text-dark didact-gothic-medium">If you would like, you can contact me via the button below.</span>
+                    <button class="w-full bg-dark py-3 rounded-lg text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">Contact Me</button>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+    </div>
+
+    <div class="w-full h-auto bg-secondaryLight py-10 lg:px-[5rem]">
+        <div class="w-full p-4 flex justify-start items-center">
+            <h1 class="text-7xl lg:text-8xl text-dark didact-gothic-bold">What can I do?</h1>
+        </div>
+
+        <br />
+
+        <div class="w-full p-3 lg:flex lg:justify-center lg:items-center">
+            <div class="w-full h-[15rem] lg:w-5/7 relative py-5 overflow-hidden">
+                <!-- Box 1 -->
+                <div class="box absolute w-full rounded-lg bg-light grid">
+                    <div class="w-full px-4 py-2">
+                        <h1 class="text-3xl lg:text-4xl text-dark didact-gothic-bold">UI Design</h1>
+                    </div>
+                    <div class="w-full px-4 py-2">
+                        <p class="text-lg lg:text-2xl text-dark didact-gothic-medium">
+                            I can create a website design, I will adjust it to the needs and suggestions of the client.
+                        </p>
+                    </div>
+                    <br />
+                    <div class="w-full flex justify-start items-center p-3">
+                        <button class="w-3/8 bg-dark py-2 rounded-lg text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="box absolute w-full rounded-lg bg-light grid">
+                    <div class="w-full px-4 py-2">
+                        <h1 class="text-3xl lg:text-4xl text-dark didact-gothic-bold">Portfolio</h1>
+                    </div>
+                    <div class="w-full px-4 py-2">
+                        <p class="text-lg lg:text-2xl text-dark didact-gothic-medium">
+                            I can create a portfolio for clients who need me to create it and there are requirements for the portfolio to be created.
+                        </p>
+                    </div>
+                    <br />
+                    <div class="w-full flex justify-start items-center p-3">
+                        <button class="w-3/8 bg-dark py-2 rounded-lg text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="box absolute w-full rounded-lg bg-light grid">
+                    <div class="w-full px-4 py-2">
+                        <h1 class="text-3xl lg:text-4xl text-dark didact-gothic-bold">Troubleshooting and bugs</h1>
+                    </div>
+                    <div class="w-full px-4 py-2">
+                        <p class="text-lg lg:text-2xl text-dark didact-gothic-medium">
+                            I can help solve problems or bugs that occur in the front-end and back-end, but please remember, I still have shortcomings in the back-end.
+                        </p>
+                    </div>
+                    <br />
+                    <div class="w-full flex justify-start items-center p-3">
+                        <button class="w-3/8 bg-dark py-2 rounded-lg text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">More Details</button>
+                    </div>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="box absolute w-full rounded-lg bg-light grid">
+                    <div class="w-full px-4 py-2">
+                        <h1 class="text-3xl lg:text-4xl text-dark didact-gothic-bold">Others Project</h1>
+                    </div>
+                    <div class="w-full px-4 py-2">
+                        <p class="text-lg lg:text-2xl text-dark didact-gothic-medium">
+                            I can help someone's project if anyone needs it. I am always available when needed.
+                        </p>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="w-full flex justify-start items-center p-3">
+                        <button class="w-3/8 bg-dark py-2 rounded-lg text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">More Details</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-full flex justify-center items-center gap-2">
+            <div id="slide1" class="slide size-2 rounded-full"></div>
+            <div id="slide2" class="slide size-2 rounded-full"></div>
+            <div id="slide3" class="slide size-2 rounded-full"></div>
+            <div id="slide4" class="slide size-2 rounded-full"></div>
+        </div>
+        <div class="w-full flex justify-between items-center p-4">
+            <div class="w-full flex justify-center items-center">
+                <button id="prevButton" class="bg-dark p-2 rounded-full text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full flex justify-center items-center">
+                <button id="nextButton" class="bg-dark p-2 rounded-full text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-auto pt-[5rem] pb-[4rem] lg:px-[5rem] bg-dark">
+        <div class="w-full flex justify-start items-center p-4">
+            <h1 class="text-7xl lg:text-8xl didact-gothic-bold text-light">My Projects.</h1>
+        </div>
+
+        <div class="w-full flex justify-start items-center p-4">
+            <p class="text-xl lg:text-2xl didact-gothic-medium text-secondaryLight">
+                I have created many projects, starting from Portfolio, ASUS Laptop Website, CRUD PHP, website prototype (Template), and To Do List application.
+            </p>
+        </div>
+
+        <div id="fetchData" class="w-full grid lg:grid-cols-2 gap-5 p-4">
+            <!-- Projects Will Be Here -->
+        </div>
+        <br />
+        <br />
+    </div>
+
+    <div class="w-full h-[48rem] py-[6rem] lg:px-[5rem] bg-secondaryLight">
+        <div class="w-full flex justify-start items-center p-4">
+            <h1 class="text-7xl lg:text-8xl didact-gothic-bold text-dark">Education</h1>
+        </div>
+
+        <div class="w-full p-4">
+            <p class="text-lg lg:text-2xl didact-gothic-medium text-dark">
+                I am currently studying at SMK Multi Karya Medan. I am still in grade 10 at the time this portfolio was created, and my major is Software Engineering.
+            </p>
+        </div>
+
+        <br />
+
+        <div class="w-full px-5 lg:flex lg:flex-col lg:justify-center lg:items-center">
+            <div class="w-full lg:w-4/5 h-[18rem] lg:h-[20rem] relative py-5 overflow-hidden ">
+
+                <div class="sekolah absolute w-full grid gap-[5px] rounded-lg bg-light">
+                    <div class="w-full p-3 flex justify-start items-center lg:p-6">
+                        <span class="text-xl lg:text-2xl didact-gothic-bold text-greyLight">2014 - 2015</span>
+                    </div>
+                    <div class="w-full flex flex-col justify-start items-start p-3 lg:p-6">
+                        <h1 class="text-2xl lg:text-3xl didact-gothic-bold text-dark">Kindergarten</h1>
+                        <p class="text-md lg:text-2xl didact-gothic-medium text-dark">
+                            When I was in Kindergarten, I was quite smart and kind at that time. Thanks to help from my parents, I got pretty good achievements. When I was in kindergarten, I always played with my older sister, and sometimes I joined my friends outside to play.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sekolah absolute w-full grid gap-[5px] rounded-lg bg-light">
+                    <div class="w-full p-3 flex justify-start items-center lg:p-6">
+                        <span class="text-xl lg:text-2xl didact-gothic-bold text-greyLight">2015 - 2021</span>
+                    </div>
+                    <div class="w-full flex flex-col justify-start items-start p-3 lg:p-6">
+                        <h1 class="text-2xl lg:text-3xl didact-gothic-bold text-dark">Elementary School</h1>
+                        <p class="text-md lg:text-2xl didact-gothic-medium text-dark">
+                            I used to go to Rizky Ananda Elementary School near my house. At that time I wasn't very smart about anything, and I was quite stupid at that time. And at that time I just got to know about games, and I used to play games a lot, so I started to know how to hack games or cheat.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sekolah absolute w-full grid gap-[5px] rounded-lg bg-light">
+                    <div class="w-full p-3 flex justify-start items-center lg:p-6">
+                        <span class="text-md lg:text-2xl didact-gothic-bold text-greyLight">2021 - 2024</span>
+                    </div>
+                    <div class="w-full flex flex-col justify-start items-start p-3 lg:p-6">
+                        <h1 class="text-2xl lg:text-3xl didact-gothic-bold text-dark">Junior High School</h1>
+                        <p class="text-md lg:text-2xl didact-gothic-medium text-dark">
+                            When I was in junior high school, I was very good at anything, and for some reason, my favorite subject was mathematics. At that time I was always the top of the class. And when I was in 8th grade, I just got to know the programming language. I know that because I have always liked hacking game data or you could say cheating. Starting from JSON data, then I entered the world of websites, namely HTML.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sekolah absolute w-full grid gap-[5px] rounded-lg bg-light">
+                    <div class="w-full p-3 flex justify-start items-center lg:p-6">
+                        <span class="text-lg lg:text-2xl didact-gothic-bold text-greyLight">2024 - Now</span>
+                    </div>
+                    <div class="w-full flex flex-col justify-start items-start p-3 lg:p-6">
+                        <h1 class="text-2xl lg:text-3xl didact-gothic-bold text-dark">High School</h1>
+                        <p class="text-md lg:text-2xl didact-gothic-medium text-dark">
+                            And now, I'm in 10th grade. I major in Software Engineering. Since I learned about Coding or Programming Language, I prefer Coding to playing. Coding is my new hobby. I have made many projects, but most of them are still prototypes or half-finished.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full flex flex-col gap-1">
+
+                <div class="w-6/7 lg:w-4/7 mx-auto h-1 overflow-hidden bg-greyLight flex justify-start items-center rounded-full">
+                    <div id="timelineProgress" class="w-1/10 h-full rounded-full bg-dark"></div>
+                </div>
+
+                <div class="w-full lg:w-5/7 lg:mx-auto flex justify-around items-center">
+                    <div class="flex flex-col justify-center items-center">
+                        <h1 id="kindergarten" class="time text-dark flex flex-col justify-center items-center">
+                            <span class="text-lg didact-gothic-bold">Kinder-</span>
+                            <span class="text-lg didact-gothic-bold">garten</span>
+                        </h1>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <h1 id="elementary" class="time text-dark flex flex-col justify-center items-center">
+                            <span class="text-lg didact-gothic-bold">Elementary</span>
+                            <span class="text-lg didact-gothic-bold">School</span>
+                        </h1>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <h1 id="middle" class="time text-dark flex flex-col justify-center items-center">
+                            <span class="text-lg didact-gothic-bold">Middle</span>
+                            <span class="text-lg didact-gothic-bold">School</span>
+                        </h1>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <h1 id="high" class="time text-dark flex flex-col justify-center items-center">
+                            <span class="text-lg didact-gothic-bold">High</span>
+                            <span class="text-lg didact-gothic-bold">School</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full flex justify-between items-center p-4">
+                <div class="w-full flex justify-center items-center">
+                    <button id="prevTimeline" class="bg-greyLight bg-dark p-2 rounded-full text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="w-full flex justify-center items-center">
+                    <button id="nextTimeline" class="bg-dark p-2 rounded-full text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-auto bg-light pt-10 pb-[8rem] lg:px-[5rem]">
+        <div class="w-full flex justify-start items-center p-4">
+            <h1 class="text-7xl lg:text-8xl didact-gothic-bold text-dark">How to reach Me?</h1>
+        </div>
+
+        <div class="w-full flex justify-start items-center p-4">
+            <h1 class="text-4xl lg:text-5xl underline underline-offset-8 didact-gothic-bold text-dark/90">Contact Me</h1>
+        </div>
+
+        <div class="w-full p-4">
+            <p class="text-xl lg:text-2xl didact-gothic-medium text-dark">
+                If you have any need with me, I will respond quickly. You can contact me via the Forum below.
+            </p>
+        </div>
+
+        <div class="w-full p-4 lg:flex lg:justify-center lg:items-center lg:px-[7rem] lg:py-6">
+            <div class="w-full rounded-lg bg-secondaryLight shadow-md p-3 lg:p-6">
+                <form class="w-full flex flex-col justify-start items-start gap-5" method="POST" accept-charset="utf-8">
+                    <div class="w-full flex justify-between items-center gap-3">
+                        <div class="w-full flex flex-col justify-start items-start gap-2">
+                            <label class="text-greyLight text-xl didact-gothic-bold" for="firstName">First Name</label>
+                            <input required class="focus:outline focus:outline-dark w-full border bg-neutral-200 border-greyLight rounded-sm text-2xl p-2" type="text" name="firstName" id="firstName" value="" />
+                        </div>
+                        <div class="w-full flex flex-col justify-start items-start gap-2">
+                            <label class="text-greyLight text-xl didact-gothic-bold" for="lastName">Last Name</label>
+                            <input required class="focus:outline focus:outline-dark w-full border bg-neutral-200 border-greyLight rounded-sm text-2xl p-2" type="text" name="lastName" id="lastName" value="" />
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-col justify-start items-start gap-2">
+                        <label class="text-greyLight text-xl didact-gothic-bold" for="email">Email</label>
+                        <input required class="focus:outline focus:outline-dark w-full border bg-neutral-200 border-greyLight rounded-sm text-2xl p-2" type="email" name="email" id="email" value="" />
+                    </div>
+                    <div class="w-full flex flex-col justify-start items-start gap-2">
+                        <label class="text-greyLight text-xl didact-gothic-bold" for="telephone">Phone Number</label>
+                        <input required class="focus:outline focus:outline-dark w-full border bg-neutral-200 border-greyLight rounded-sm text-2xl p-2" type="tel" name="telephone" id="telephone" value="" />
+                    </div>
+                    <div class="w-full flex flex-col justify-start items-start gap-2">
+                        <label class="text-greyLight text-xl didact-gothic-bold" for="message">Message</label>
+                        <textarea required class="focus:outline focus:outline-dark w-full border bg-neutral-200 border-greyLight rounded-sm text-2xl p-2" type="text" name="message" id="message" value=""></textarea>
+                    </div>
+                    <div class="w-full flex justify-center items-center p-4 gap-2">
+                        <input required class="transition-all rounded-lg p-1 border border-greyLight bg-neutral-200" type="checkbox" name="readed" id="readed" />
+                        <label for="readed" class="text-lg didact-gothic-medium text-dark">I have read the Privacy and Policy</label>
+                    </div>
+                    <div class="w-full flex justify-center items-center p-4">
+                        <button class="w-3/5 mx-auto bg-dark py-3 rounded-lg text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:text-dark focus:bg-light focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-auto py-10 lg:px-[5rem] bg-dark">
+        <div class="w-full flex flex-col justify-center items-center gap-2">
+            <div class="w-full p-2">
+                <h1 class="text-center cinzel-decorative-bold text-xl text-light">valerie attila al-fath</h1>
+            </div>
+            <div class="flex justify-around items-center gap-2">
+                <div class="p-1">
+                    <svg fill="#C4C4C4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z" /><circle cx="11.994" cy="11.979" r="3.003" /></svg>
+                </div>
+                <div class="p-1">
+                    <svg fill="#C4C4C4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z" /></svg>
+                </div>
+                <div class="p-1">
+                    <svg fill="#C4C4C4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z" /></svg>
+                </div>
+            </div>
+        </div>
+        <div class="w-full px-5 py-4">
+            <div class="w-full h-[1.5px] rounded-xl bg-secondaryLight"></div>
+        </div>
+        <div class="w-full flex justify-center items-center p-4">
+            <span class="text-lg didact-gothic-medium text-greyLight">&copy; 2025 Valerie Attila Al-fath. All rights reserved. </span>
+        </div>
+    </div>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+
+    <!-- Script -->
+    <script src="src/js/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
