@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     let masterTl = gsap.timeline({
         scrollTrigger: {
-            end: "+=1080 0px",
+            end: "+=1440 0px",
             scrub: true,
             pin: "#boxWrap",
             //markers: true,
@@ -18,16 +18,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
             y: "-2rem",
             scale: 1,
         }).to("#name1", {
-            scale: 0.4,
-            y: "2rem",
-            x: "200%",
+            scale: 0.2,
+            y: "130%",
+            //x: "200%",
         }, "-=0.5").to("#name2", {
             scale: 3,
             y: "2rem",
         }, "-=0.5").to("#name3", {
-            scale: 0.4,
-            y: "2rem",
-            x: "-200%",
+            scale: 0.2,
+            y: "140%",
+            //x: "-200%",
         }, "-=0.5")
     }
 
@@ -252,6 +252,61 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         updateTimelineButtons();
     }
+    
+    
+    
+    
+    
+    
+    let menuButton = document.getElementById('menuButton');
+    let menuBar = document.getElementById('menuBar');
+    let open = false;
+    
+    gsap.set(menuBar, {
+        yPercent: -100,
+    });
+    
+    function menuToggleOpen(args){
+        gsap.to(args, {
+            yPercent: 0,
+            duration: 0.62,
+            ease: "power2.out",
+            /*onComplete: () => {
+                document.getElementById('body').classList.add('no-scroll');
+            }*/
+        });
+        
+    }
+    function menuToggleClose(args){
+        gsap.to(args, {
+            yPercent: -100,
+            duration: 0.62,
+            ease: "power2.out",
+            /*onComplete: () => {
+                document.getElementById('body').classList.remove('no-scroll');
+            }*/
+        });
+        
+    }
+    
+    menuButton.addEventListener("click", () => {
+        if(open === false){
+            menuToggleOpen(menuBar);
+            open = true;
+        } else if (open === true){
+            menuToggleClose(menuBar);
+            open = false;
+        }
+    })
+    
+    
+    let menuList = document.querySelectorAll('.menuList');
+    menuList.forEach(lists => {
+        lists.addEventListener("click", () => {
+            menuToggleClose(menuBar);
+            open = false;
+        })
+    })
 
 });
 
@@ -267,23 +322,19 @@ function getData() {
         data.forEach(fetched => {
             container.insertAdjacentHTML("beforeend", `
                 <div class="relative w-full h-[360px] overflow-hidden rounded-lg bg-dark border border-dark">
-                <img class="bg-dark relative w-full h-full object-cover brightness-120 saturate-70" src="src/img/${fetched.path}" alt="" />
+                <img loading="lazy" class="bg-dark relative w-full h-full object-cover brightness-85 saturate-70" src="src/img/${fetched.path}" alt="" />
 
-                <div class="absolute z-10 top-0 left-0 p-3">
+                <div class="absolute z-[5] top-0 left-0 p-3">
                 <h1 class="text-6xl text-light didact-gothic-bold">${fetched.nama}</h1>
                 </div>
 
                 <div class="absolute w-full h-full bottom-0 left-0 right-0 top-0 bg-radial from-transparent from-12% to-dark"></div>
 
-                <div class="absolute left-0 bottom-[52px] p-4">
+                <div class="absolute left-0 bottom-[10px] p-4">
                 <span class="text-secondaryLight text-md didact-gothic-medium">${fetched.description}</span>
                 </div>
-
-                <div class="absolute left-0 bottom-0 p-4">
-                <button class="w-full bg-dark py-2 px-8 rounded-lg text-center text-light text-lg didact-gothic-bold border-2 border-transparent focus:border-dark focus:bg-light focus:text-dark focus:shadow-lg hover:shadow-md hover:bg-neutral-400 hover:border-transparent transition-all" type="button">See More</button>
                 </div>
-                </div>
-                `);
+            `);
         })
     })
     .catch(error => {
