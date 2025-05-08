@@ -5,24 +5,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 
+
 /* CINZEL */
 
 .cinzel-decorative-regular {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cinzel-decorative-bold {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .cinzel-decorative-black {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
-  font-style: normal;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 /* END CINZEL */
@@ -33,19 +34,19 @@
 /* GOTHIC */
 
 .didact-gothic-regular {
-  font-family: "Didact Gothic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .didact-gothic-medium {
-  font-family: "Didact Gothic", sans-serif;
-  font-weight: 550;
-  font-style: normal;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 550;
+    font-style: normal;
 }
 .didact-gothic-bold {
-  font-family: "Didact Gothic", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 
@@ -55,21 +56,21 @@
 
 
 .cardo-regular {
-  font-family: "Cardo", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cardo-bold {
-  font-family: "Cardo", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .cardo-regular-italic {
-  font-family: "Cardo", serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 
@@ -77,116 +78,42 @@
 
 
 .nunito-thin {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 .nunito-regular {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 .nunito-medium {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 .nunito-semibold {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 .nunito-bold {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 .nunito-extrabold {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
-/* Instrument */
-
-
-
-.instrument-sans-thin {
-  font-family: "Instrument Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-.instrument-sans-regular {
-  font-family: "Instrument Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.instrument-sans-medium {
-  font-family: "Instrument Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.instrument-sans-semibold {
-  font-family: "Instrument Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-.instrument-sans-bold {
-  font-family: "Instrument Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-.instrument-sans-extrabold {
-  font-family: "Instrument Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-
-
-/* Orbitron */
-
-.orbitron-regular {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.orbitron-medium {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.orbitron-semibold {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-.orbitron-bold {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-.orbitron-extrabold {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
 
 /* End Fonts */
 
@@ -201,4 +128,11 @@ html {
 #introImage {
     background: url("../img/intro.jpg") center no-repeat;
     background-size: cover;
+}
+
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%
 }
