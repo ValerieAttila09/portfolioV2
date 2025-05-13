@@ -136,3 +136,21 @@ html {
     height: 100%;
     width: 100%
 }
+
+#otherImage {
+    background: url("../img/other.jpg") center no-repeat;
+    background-size: cover;
+}
+#bug {
+    background: url("../img/bug.jpg") center no-repeat;
+    background-size: cover;
+}
+#design {
+    background: url("../img/design.jpg") center no-repeat;
+    background-size: cover;
+}
+#portofolio {
+    background: url("../img/portofolio.jpg") center no-repeat;
+    background-size: cover;
+    
+}
