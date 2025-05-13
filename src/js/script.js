@@ -320,7 +320,7 @@ function getDataProject() {
 
         data.forEach(fetched => {
             containerPro.insertAdjacentHTML("beforeend", `
-                <div class="relative w-full h-[360px] overflow-hidden rounded-lg bg-dark border border-dark">
+                <div class="relative w-full h-[360px] overflow-hidden rounded-lg bg-dark border border-neutral-700">
                 <img loading="lazy" class="bg-dark relative w-full h-full object-cover brightness-85 saturate-70" src="src/img/${fetched.path}" alt="" />
 
                 <div class="absolute z-[5] top-0 left-0 p-3">
