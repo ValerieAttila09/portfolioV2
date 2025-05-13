@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
 
         count = index;
-
+        
         // Slide masuk
         gsap.fromTo(next, {
             xPercent: inX,
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             console.error("Error!");
         }
     }
-    
+
     function seperempat() {
         const lebar = document.getElementById('timelineProgress');
         gsap.to(lebar, {
@@ -252,21 +252,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         updateTimelineButtons();
     }
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     let menuButton = document.getElementById('menuButton');
     let menuBar = document.getElementById('menuBar');
     let open = false;
-    
+
     gsap.set(menuBar, {
         yPercent: -100,
     });
-    
-    function menuToggleOpen(args){
+
+    function menuToggleOpen(args) {
         gsap.to(args, {
             yPercent: 0,
             duration: 0.62,
@@ -275,9 +275,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 document.getElementById('body').classList.add('no-scroll');
             }*/
         });
-        
+
     }
-    function menuToggleClose(args){
+    function menuToggleClose(args) {
         gsap.to(args, {
             yPercent: -100,
             duration: 0.62,
@@ -286,41 +286,40 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 document.getElementById('body').classList.remove('no-scroll');
             }*/
         });
-        
+
     }
-    
+
     menuButton.addEventListener("click", () => {
-        if(open === false){
+        if (open === false) {
             menuToggleOpen(menuBar);
             open = true;
-        } else if (open === true){
+        } else if (open === true) {
             menuToggleClose(menuBar);
             open = false;
         }
-    })
-    
-    
+    });
+
     let menuList = document.querySelectorAll('.menuList');
     menuList.forEach(lists => {
         lists.addEventListener("click", () => {
             menuToggleClose(menuBar);
             open = false;
         })
-    })
+    });
 
 });
 
 
 // JSON DATA
 
-function getData() {
+function getDataProject() {
     fetch("data/projects.json")
     .then(response => response.json())
     .then(data => {
-        const container = document.getElementById("fetchData");
+        const containerPro = document.getElementById("fetchData");
 
         data.forEach(fetched => {
-            container.insertAdjacentHTML("beforeend", `
+            containerPro.insertAdjacentHTML("beforeend", `
                 <div class="relative w-full h-[360px] overflow-hidden rounded-lg bg-dark border border-dark">
                 <img loading="lazy" class="bg-dark relative w-full h-full object-cover brightness-85 saturate-70" src="src/img/${fetched.path}" alt="" />
 
@@ -334,7 +333,7 @@ function getData() {
                 <span class="text-secondaryLight text-md didact-gothic-medium">${fetched.description}</span>
                 </div>
                 </div>
-            `);
+                `);
         })
     })
     .catch(error => {
@@ -342,5 +341,4 @@ function getData() {
             error);
     });
 }
-
-getData();
+getDataProject();
